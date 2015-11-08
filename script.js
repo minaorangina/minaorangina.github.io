@@ -1,3 +1,5 @@
 window.onload = function () {
-  document.getElementById("background-div").className = "lazyLoad";
+  var bg = document.getElementsByClassName ("background-div")[0];
+  bg.classList.add("lazyLoad");
+  bg.classList.remove("hidden");
 }
