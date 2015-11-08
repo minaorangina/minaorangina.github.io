@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "LobsterTwo";
+  src: url("fonts/LobsterTwo-Regular.otf");
+}
+@font-face {
+  font-family: "OstrichSans";
+  src: url("fonts/OstrichSans-Black.otf");
+}
+@font-face {
+  font-family: "Caviar";
+  src: url("Caviar_Dreams_Bold.ttf");
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 body {
   margin: 0;
 }
@@ -48,8 +61,12 @@ body {
 }
 
 .headline {
+  font-size: 7em;
+  color: #FF5A57;
+  font-family: 'Caviar', sans-serif;
+  letter-spacing: 15px;
   position: absolute;
-  left: 45%;
-  top: 45%;
+  left: 30%;
+  top: 42%;
   margin: auto;
 }
