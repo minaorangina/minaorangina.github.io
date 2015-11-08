@@ -61,12 +61,12 @@ body {
 }
 
 .headline {
-  font-size: 7em;
+  font-size: 5em;
   color: #FF5A57;
   font-family: 'Caviar', sans-serif;
   letter-spacing: 15px;
   position: absolute;
-  left: 30%;
+  right: 0%;
   top: 42%;
   margin: auto;
 }
