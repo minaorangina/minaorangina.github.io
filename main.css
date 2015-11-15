@@ -69,7 +69,7 @@ html, body {
   letter-spacing: 15px;
   position: absolute;
   right: 0%;
-  top: 35%;
+  top: 26%;
   text-shadow: 2px 2px 80px white;
   /*width: 100%;*/
   background-color: rgba(255, 255, 255, 0.1);
@@ -83,7 +83,27 @@ html, body {
 .tag {
   font-size: 1.5em;
 }
+.cv {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.headline > a {
+    text-decoration: none;
+    color: #AD2866;
+    font-size: 1.4em;
+    transition: font-size;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.headline > a:hover {
+    color: #AD2866;
 
+    font-size: 2em;
+}
 .links {
     text-align: center;
     margin-top: 30px;
