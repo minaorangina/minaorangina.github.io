@@ -21,7 +21,7 @@ html, body {
 }
 .background-div {
   background-size: cover;
-  background-image: url('./mac-bag-coffee.jpg');
+  background-image: url('./img/mac-bag-coffee.jpg');
   height: 100%;
   z-index: -1;
 }
@@ -82,4 +82,41 @@ html, body {
 }
 .tag {
   font-size: 1.5em;
+}
+
+.links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.links > a {
+    text-decoration: none;
+    padding: 0 30px;
+}
+    /*transition: -webkit-filter 1.5s ease-in-out 0.5;*/
+    /*transition: filter 1.5s ease-in-out 0.5;*/
+    /*-webkit-filter: invert(0%);*/
+    /*filter: invert(0%);*/
+
+.icon {
+    -webkit-transition-property: filter;
+    -moz-transition-property: filter;
+    -o-transition-property: filter;
+    transition-property: filter;
+
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.icon:hover {
+
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 }
