@@ -12,11 +12,11 @@
 }
 @font-face {
   font-family: 'Blanche';
-  src: url('./fonts/blanche_de_la_fontaine.ttf');
+  src: url('./fonts/Blanche_de_la_Fontaine.ttf');
 }
 
 body {
-  font-family: 'Blanche', Ariel, sans-serif;
+  font-family: 'Blanche', Ariel, serif;
   color: white;
   text-decoration: none;
 }
@@ -28,7 +28,7 @@ h1 {
   letter-spacing: 7px;
 }
 h2 {
-  font-family: 'WorkSans', Ariel, sans-serif;
+  font-family: 'Encode Sans', Ariel, sans-serif;
   font-size: 28px;
   letter-spacing: 3px;
   font-weight: lighter;
