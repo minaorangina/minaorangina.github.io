@@ -11,8 +11,8 @@
   src: url('fonts/Caviar_Dreams_Bold.ttf');
 }
 @font-face {
-  font-family: 'WorkSans';
-  src: url('fonts/work-sans/WorkSans-Light.otf');
+  font-family: 'Encode Sans';
+  src: url('fonts/EncodeSans-Light.ttf');
 }
 
 body {
@@ -31,6 +31,7 @@ h2 {
   font-family: 'WorkSans', Ariel, sans-serif;
   font-size: 28px;
   letter-spacing: 3px;
+  font-weight: lighter;
 }
 
 .background, .outer {
