@@ -1,14 +1,23 @@
-window.onload = function () {
+if (document.readyState !== 'loading') {
+  ready();
+} else {
+  document.addEventListener('DOMContentLoaded', ready);
+}
 
-  var bg = document.getElementsByClassName("background-div")[0];
-  bg.classList.add("lazyLoad");
-  bg.classList.remove("hidden");
-
-  // var links = document.getElementsByClassName("links");
-  // bg.classList.add("lazyLoad");
-  // bg.classList.remove("hidden");
-
-  var headline = document.getElementsByClassName("headline")[0];
-  headline.classList.add("lazyLoad2");
-  headline.classList.remove("hidden");
+function ready () {
+  const granimInstance = new Granim({
+    element: '.background',
+    direction: 'left-right',
+    opacity: [1, 0.5],
+    states: {
+      'default-state': {
+        gradients: [
+          ['#42303b', '#441342'],
+          ['#0e337d', '#084e42'],
+          ['#584b21', '#827532']
+        ],
+        transitionSpeed: 5000
+      }
+    }
+  })
 }

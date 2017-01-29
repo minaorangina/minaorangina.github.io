@@ -1,160 +1,63 @@
 @font-face {
-  font-family: "LobsterTwo";
-  src: url("fonts/LobsterTwo-Regular.otf");
+  font-family: 'Blanche';
+  src: url('Blanche_de_la_Fontaine.ttf');
 }
-
 @font-face {
-  font-family: "OstrichSans";
-  src: url("fonts/OstrichSans-Black.otf");
+  font-family: 'Luxi';
+  src: url('luxisb.ttf');
 }
-
 @font-face {
-  font-family: "Caviar";
-  src: url("Caviar_Dreams_Bold.ttf");
+  font-family: 'Caviar Dreams';
+  src: url('Caviar_Dreams_Bold.ttf');
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+  font-family: 'Blanche', Ariel, sans-serif;
+  color: white;
+  text-decoration: none;
+}
 
-html, body {
-  height: 100%;
+h1 {
+  font-family: 'Blanche', Ariel, sans-serif;
+  font-size: 150px;
   margin: 0;
+  letter-spacing: 7px;
+}
+h2 {
+  font-family: 'Luxi', Ariel, sans-serif;
+  font-size: 28px;
+  letter-spacing: 3px;
 }
 
-.hidden {
-  opacity: 0;
-}
-
-.background-div {
-  background-size: cover;
-  background-image: url('./img/mac-bag-coffee.jpg');
-  height: 100%;
-  z-index: -1;
-}
-
-.lazyLoad {
-   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 4s; /* Firefox < 16 */
-       -ms-animation: fadein 4s; /* Internet Explorer */
-        -o-animation: fadein 4s; /* Opera < 12.1 */
-           animation: fadein 4s;
-}
-
-.lazyLoad2 {
-   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2s; /* Firefox < 16 */
-       -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-           animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.headline {
-  text-align: right;
-  color: #1793FF;
-  font-family: 'Caviar', sans-serif;
-  letter-spacing: 15px;
+.background, .outer {
   position: absolute;
-  right: 0%;
-  top: 26%;
-  text-shadow: 2px 2px 80px white;
-  transition: fadein;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.name, .tag {
-  font-size: 5em;
-  margin: 0;
-  opacity: 100%;
+.background {
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.tag {
-  font-size: 1.5em;
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.cv {
-
-}
-
-.headline > a {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #AD2866;
-    transition: border;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    border: 1px solid black;
-}
-
-.headline > a:hover {
-
-    /*border: 1px solid;*/
+.outer > * {
+  text-align: center;
 }
 
 .links {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.links > a {
-    text-decoration: none;
-    padding: 0 30px;
-}
-
-.icon {
-    -webkit-transition-property: filter;
-    -moz-transition-property: filter;
-    -o-transition-property: filter;
-    transition-property: filter;
-
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-
-    -webkit-filter: blur(1.6px);
-    filter: blur(1.6px);
-}
-
-.icon:hover {
-
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
