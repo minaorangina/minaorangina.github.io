@@ -1,14 +1,18 @@
 @font-face {
   font-family: 'Blanche';
-  src: url('Blanche_de_la_Fontaine.ttf');
+  src: url('fonts/Blanche_de_la_Fontaine.ttf');
 }
 @font-face {
   font-family: 'Luxi';
-  src: url('luxisb.ttf');
+  src: url('fonts/luxisb.ttf');
 }
 @font-face {
   font-family: 'Caviar Dreams';
-  src: url('Caviar_Dreams_Bold.ttf');
+  src: url('fonts/Caviar_Dreams_Bold.ttf');
+}
+@font-face {
+  font-family: 'WorkSans';
+  src: url('fonts/work-sans/WorkSans-Light.otf');
 }
 
 body {
@@ -24,7 +28,7 @@ h1 {
   letter-spacing: 7px;
 }
 h2 {
-  font-family: 'Luxi', Ariel, sans-serif;
+  font-family: 'WorkSans', Ariel, sans-serif;
   font-size: 28px;
   letter-spacing: 3px;
 }
