@@ -5,6 +5,10 @@ if (document.readyState !== 'loading') {
 }
 
 function ready () {
+  const canvasContainer = document.querySelector('.canvas-container');
+  document.documentElement.clientHeight;
+  canvasContainer.style.height = `${document.documentElement.clientHeight * 0.95}px`;
+
   const granimInstance = new Granim({
     element: '.background',
     direction: 'left-right',
@@ -19,5 +23,5 @@ function ready () {
         transitionSpeed: 5000
       }
     }
-  })
+  });
 }
