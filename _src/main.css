@@ -16,12 +16,13 @@
 }
 
 body {
-  font-family: 'Blanche', Ariel, serif;
+  font-family: 'Luxi', Ariel, serif;
   color: white;
   text-decoration: none;
 }
 
-h1 {
+
+h1.title {
   font-family: 'Blanche', Ariel, sans-serif;
   font-size: 150px;
   margin: 0;
