@@ -4,19 +4,51 @@
     <meta charset="utf-8">
     <title>minaorangina: web developer</title>
     <link rel="stylesheet" href="main.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="animate.css" media="screen" charset="utf-8">
   </head>
   <body>
     <div class="outer">
       <div class="canvas-container">
         <canvas class="background"></canvas>
       </div>
+      <a href="/blog">
+        <button id="blog-link">Blog</button>
+      </a>
       <div class="credentials">
         <h1 class="title">Mina Gyimah</h1>
-        <h2>Full stack software developer</h2>
-        <h3>@minaorangina</h3>
+        <h2>She's a software developer. <span class="blinking-cursor">|</span></h2>
+        <!-- <div>&lt;blog&gt;</div>
+        <div>CV</div> -->
+      </div>
+      <!-- <div class="evidence">
+        <div>&lt;blog&gt;</div>
+        <div>CV</div>
+      </div> -->
+      <div class="evidence">
+        <a href="https://github.com/minaorangina" target="_blank">
+          <img class="icon" src="./img/github-9-64.png" alt="GitHub" />
+        </a>
+        <a href="https://uk.linkedin.com/in/minagyimah" target="_blank">
+          <img class="icon" src="./img/linkedin-4-64.png" alt="LinkedIn" />
+        </a>
+        <a href="https://twitter.com/minaorangina" target="_blank">
+          <img class="icon" src="./img/twitter-4-64.png" alt="Twitter" />
+        </a>
       </div>
     </div>
-    <footer>
+    <div class="main">
+      <div class="about">
+        <div>
+          She writes code across the stack, handling everything from API design to pleasant user interfaces.
+          <br/><br/>
+          She's great at JavaScript/Node.js, React, Redux &amp; React Native.  <a href="#" target="_blank">Her CV will tell you more</a>.
+          <br/><br/>
+          She loves sharing her knowledge with others, especially at <a href="http://nodegirls.io">Node Girls</a>
+          (which she co-organises), and here, on <a href="/blog">the coding blog</a>.
+        </div>
+      </div>
+    </div>
+    <!-- <footer>
       <div class="links">
         <a href="https://github.com/minaorangina" target="_blank">
           <img class="icon" src="./img/github-9-64.png" alt="GitHub" />
@@ -28,7 +60,7 @@
           <img class="icon" src="./img/twitter-4-64.png" alt="Twitter" />
         </a>
       </div>
-    </footer>
+    </footer> -->
     <script src="granim.min.js" charset="utf-8"></script>
     <script src="script.js" charset="utf-8"></script>
     <script>

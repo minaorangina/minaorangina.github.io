@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: 'Blanche';
-  src: url('./fonts/Blanche_de_la_Fontaine.ttf');
+  src: url('./fonts/Blanche_de_la_Fontaine.ttf') format("truetype");
 }
 
 body {
@@ -20,6 +20,7 @@ body {
   color: white;
   text-decoration: none;
   margin: 0;
+  background-color: rgba(202, 208, 224, 0.2);
 }
 
 header,
@@ -31,7 +32,7 @@ footer {
 
 h1.title {
   font-family: 'Blanche', Ariel, sans-serif;
-  font-size: 150px;
+  font-size: 200px;
   margin: 0;
   letter-spacing: 7px;
 }
@@ -63,6 +64,30 @@ h2 {
   position: absolute;
 }
 
+.credentials h2 {
+  color: white;
+  font-weight: 600;
+}
+
+#blog-link {
+  font-family: 'Encode Sans', Ariel, sans-serif;
+  background-color: transparent;
+  font-size: 28px;
+  letter-spacing: 3px;
+  /*font-weight: lighter;*/
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+
+#blog-link:hover {
+  cursor: pointer;
+}
+
 .outer {
   display: flex;
   justify-content: center;
@@ -73,6 +98,34 @@ h2 {
 
 .outer > * {
   text-align: center;
+}
+
+.evidence {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 30px;
+}
+
+.evidence img {
+  height: 40px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  font-size: 32px;
+  padding: 20px 0;
+}
+
+
+.about {
+  color: black;
+  max-width: 45%;
+  line-height: 1.3em;
+  text-align: justify;
 }
 
 .links {

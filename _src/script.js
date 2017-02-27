@@ -7,18 +7,17 @@ if (document.readyState !== 'loading') {
 function ready () {
   const canvasContainer = document.querySelector('.canvas-container');
   document.documentElement.clientHeight;
-  canvasContainer.style.height = `${document.documentElement.clientHeight * 0.95}px`;
+  canvasContainer.style.height = `${document.documentElement.clientHeight * 0.7}px`;
 
   const granimInstance = new Granim({
     element: '.background',
-    direction: 'left-right',
-    opacity: [1, 0.5],
+    direction: 'top-bottom',
+    opacity: [1, 0.5, 0],
     states: {
       'default-state': {
         gradients: [
-          ['#42303b', '#441342'],
-          ['#0e337d', '#084e42'],
-          ['#584b21', '#827532']
+          ['#160610', '#260725', '#cad0e0'],
+          ['#030334', '#001f53', '#cad0e0']
         ],
         transitionSpeed: 5000
       }
