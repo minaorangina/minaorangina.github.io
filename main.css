@@ -13,6 +13,7 @@
 @font-face {
   font-family: 'Blanche';
   src: url('./fonts/Blanche_de_la_Fontaine.ttf') format("truetype");
+  src: url('./fonts/Blanche_de_la_Fontaine.eot');
 }
 
 body {
