@@ -16,8 +16,8 @@ function ready () {
     states: {
       'default-state': {
         gradients: [
-          ['#160610', '#260725', '#cad0e0'],
-          ['#030334', '#001f53', '#cad0e0']
+          ['#160610', '#160610'],
+          ['#030334', '#030334']
         ],
         transitionSpeed: 5000
       }

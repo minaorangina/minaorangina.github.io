@@ -1,8 +1,12 @@
 @import url(zenburn.css);
 
 @font-face {
-  font-family: 'Blanche';
-  src: url('./fonts/Blanche_de_la_Fontaine.ttf');
+  font-family: 'Wreath Halftone Regular';
+  src: url('../fonts/wreathhalftoneregular-webfont.eot');
+	src: url('../fonts/wreathhalftoneregular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/wreathhalftoneregular-webfont.woff') format('woff'),
+	     url('../fonts/wreathhalftoneregular-webfont.ttf') format('truetype'),
+	     url('../fonts/wreathhalftoneregular-webfont.svg#webfont') format('svg');
 }
 
 body {
@@ -14,7 +18,7 @@ body {
 }
 
 .name > * {
-  font-family: 'Blanche', Ariel, sans-serif;
+  font-family: 'Wreath Halftone Regular', Ariel, sans-serif;
 }
 
 p {
