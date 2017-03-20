@@ -1,0 +1,57 @@
+@media (max-width: 450px) {
+
+  .top {
+    padding: 0 0.5em;
+    height: 100vh;
+  }
+
+  .credentials h1.title {
+    font-size: 6em;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .credentials h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .credentials h2:last-of-type {
+    align-self: center;
+  }
+  .credentials h2:last-of-type span {
+    align-self: center;
+    display: inline-block;
+  }
+
+  .credentials .icon {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .about {
+    width: 95vw;
+    font-size: 16px;
+  }
+
+  .about div {
+    padding: 5px;
+  }
+
+  .about .links {
+    /*display: none;*/
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+}
