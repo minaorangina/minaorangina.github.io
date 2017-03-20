@@ -1,14 +1,15 @@
 @media (max-width: 450px) {
 
   .top {
-    padding: 0 0.5em;
-    height: 100vh;
+    padding: 0 1em;
+    height: 94vh;
+    margin-bottom: 6vh;
   }
 
   .credentials h1.title {
     font-size: 6em;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .credentials h2 {
@@ -17,6 +18,7 @@
   }
 
   .credentials h2:last-of-type {
+    margin-top: 30px;
     align-self: center;
   }
   .credentials h2:last-of-type span {
@@ -24,13 +26,17 @@
     display: inline-block;
   }
 
-  .credentials .icon {
+  .ion-ios-arrow-down {
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     right: 0;
     text-align: center;
+  }
+
+  .ion-ios-arrow-down.hidden {
+    visibility: hidden;
   }
 
   .about {
@@ -40,6 +46,7 @@
 
   .about div {
     padding: 5px;
+    text-align: center;
   }
 
   .about .links {
