@@ -48,6 +48,10 @@
     text-align: center;
   }
 
+  .about {
+    margin-bottom: calc(50px + 10vh);
+  }
+
   .about .links {
     /*display: none;*/
     /*position: absolute;*/
