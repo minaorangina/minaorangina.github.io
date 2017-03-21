@@ -2,8 +2,8 @@
 
   .top {
     padding: 0 1em;
-    height: 94vh;
-    margin-bottom: 6vh;
+    height: 90vh;
+    margin-bottom: 10vh;
   }
 
   .credentials h1.title {
@@ -14,15 +14,14 @@
 
   .credentials h2 {
     font-size: 1.3em;
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .credentials h2:last-of-type {
     margin-top: 30px;
-    align-self: center;
+    text-align: right;
   }
   .credentials h2:last-of-type span {
-    align-self: center;
     display: inline-block;
   }
 
