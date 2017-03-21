@@ -122,6 +122,9 @@ footer {
 .icon {
   font-size: 32px;
 }
+.icon.hidden {
+  visibility: hidden;
+}
 .ion-social-octocat {
   color: rgb(32, 31, 31);
 }

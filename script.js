@@ -32,15 +32,16 @@ function ready () {
     var chevron = document.querySelector('.ion-ios-arrow-down');
     var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
     var pctScrolled = Math.floor(scrollTop/trackLength * 100); // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
-
-    if (pctScrolled > 18) {
-      if (!chevron.classList.contains('hidden')) {
-        chevron.classList.add('hidden');
+    if (document.body.clientWidth <= 450) {
+      if (pctScrolled > 18) {
+        if (!chevron.classList.contains('hidden')) {
+          chevron.classList.add('hidden');
+        }
       }
-    }
-    if (pctScrolled < 18) {
-      if (chevron.classList.contains('hidden')) {
-        chevron.classList.remove('hidden');
+      if (pctScrolled < 18) {
+        if (chevron.classList.contains('hidden')) {
+          chevron.classList.remove('hidden');
+        }
       }
     }
   }
@@ -48,6 +49,13 @@ function ready () {
   getmeasurements();
 
   window.addEventListener("resize", function () {
+    var chevron = document.querySelector('.ion-ios-arrow-down');
+    
+    if (document.body.clientWidth > 450) {
+      if (!chevron.classList.contains('hidden')) {
+        chevron.classList.add('hidden');
+      }
+    }
     if (document.body.clientWidth <= 450) {
       getmeasurements();
     }
