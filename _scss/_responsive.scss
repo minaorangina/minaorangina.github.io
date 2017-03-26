@@ -14,7 +14,6 @@
 
   .credentials h2 {
     font-size: 1.3em;
-    /*text-align: center;*/
   }
 
   .credentials h2:last-of-type {
@@ -32,33 +31,30 @@
     left: 0;
     right: 0;
     text-align: center;
-  }
 
-  .ion-ios-arrow-down.hidden {
-    visibility: hidden;
+    &.hidden {
+      visibility: hidden;
+    }
   }
 
   .about {
     width: 95vw;
     font-size: 16px;
-  }
-
-  .about div {
-    padding: 5px;
-    text-align: center;
-  }
-
-  .about {
     margin-bottom: calc(50px + 10vh);
-  }
 
-  .about .links {
-    /*display: none;*/
-    /*position: absolute;*/
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 25px;
+    .links {
+      /*display: none;*/
+      /*position: absolute;*/
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 25px;
+    }
+
+    div {
+      padding: 5px;
+      text-align: center;
+    }
   }
 
   .icon {
