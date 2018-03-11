@@ -1,0 +1,15 @@
+[submodule "test/themes/base16"]
+	path = test/themes/base16
+	url = https://github.com/htdvisser/hugo-base16-theme
+[submodule "test/themes/ga-hugo-theme"]
+	path = test/themes/ga-hugo-theme
+	url = https://github.com/giraffeacademy/ga-hugo-theme.git
+[submodule "test/themes/creative-portfolio"]
+	path = test/themes/creative-portfolio
+	url = https://github.com/kishaningithub/hugo-creative-portfolio-theme.git
+[submodule "test/themes/tranquilpeak"]
+	path = test/themes/tranquilpeak
+	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git
+[submodule "test/themes/beautifulhugo"]
+	path = test/themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git
