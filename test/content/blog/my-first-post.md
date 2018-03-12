@@ -2,9 +2,8 @@
 title: "My First Post"
 date: 2018-03-04T11:46:36Z
 draft: false
-type: post
 tags: ["javascript", "es6"]
-categories: ["tutorial", "blog"]
+categories: ["blog"]
 ---
 
 Hey there
