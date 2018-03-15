@@ -1,11 +1,13 @@
 ---
-title: "Generics"
+title: "Generics explained"
 date: 2018-03-09T11:46:36Z
-draft: false
+draft: true
+image: /images/cup-T.png
 tags: ["typescript", "oop"]
 ---
 
 Generics are what you use to make it possible to have generic functions in a language that’s strongly typed.
+<!--more-->
 
 So normally, if you declare a function in a typed language, you have to define precisely what the types of the parameters of that function will be, as well as the type of the return value.  And the function will only work with the types it’s expecting.
 
@@ -17,7 +19,7 @@ When defining the function, you basically indicate a fake type.  Often, it will 
 
 So today we were trying to do some ninja TypeScript, where we wanted to filter an array with two different types in it, to produce just one.  We have a union type:
 
-
+{{< highlight javascript >}}
     PresOp = AddOp | RemoveOp
 
 
@@ -35,3 +37,4 @@ So today we were trying to do some ninja TypeScript, where we wanted to filter a
     function isRemoveOp(op: any): op is RemoveOp {
       return op.opType === Optype.Leaving;
     }
+{{< /highlight >}}

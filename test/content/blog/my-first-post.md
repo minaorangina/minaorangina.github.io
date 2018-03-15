@@ -1,9 +1,11 @@
 ---
 title: "My First Post"
 date: 2018-03-04T11:46:36Z
-draft: false
+draft: true
 tags: ["javascript", "es6"]
 categories: ["blog"]
+image: /images/computer.jpg
+credit: "Photo by Markus Spiske on Unsplash"
 ---
 
 Hey there
