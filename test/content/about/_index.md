@@ -3,19 +3,16 @@ date = "2016-11-05T21:05:33+05:30"
 title = "About me"
 +++
 
-An sincerity so extremity he additions. Her yet **there truth merit**. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
-
-Received overcame oh sensible so at an. Formed do change merely to county it. **Am separate contempt** domestic to to oh. On relation my so addition branched. Put hearing cottage she norland letters equally prepare too. Replied exposed savings he no viewing as up. Soon body add him hill. No father living really people estate if. Mistake do produce beloved demesne if am pursuit.
-
 ![This is me][1]
 
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+I love writing tutorials. I wrote the Node.js coding materials that we use at Node Girls.
 
-#### Education
+They really helped me when I was learning, so my way of giving back. 
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
+I want to make sure that anyone who wants to learn to code has access to some good quality learning materials that aren't complicated and don't bore you to death.
 
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+Though I've #madeit and am working as a software engineer, I never stop learning.  May as well share my journey with you to save you the trouble.
+
+I am always up for chatting about anything I write here on Twitter, questions, comments, whatever :)
 
 [1]: https://avatars2.githubusercontent.com/u/8915092?s=400&u=961b691e6870298ad7d9f2d5382a7672f9415887&v=4

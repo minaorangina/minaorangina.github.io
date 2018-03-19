@@ -1,0 +1,17 @@
+body {
+  background-color: rgba(241, 250, 247, 0.747)
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .box-masonary-description {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.italic {
+  font-family: 'IM Fell Great Primer', serif;
+  color: #808080;
+  font-style: normal;
+}
+
+p {
+  color: black;
+}

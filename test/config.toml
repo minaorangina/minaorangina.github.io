@@ -1,5 +1,6 @@
 baseURL = "http://minaorangina.com/"
-languageCode = "en-uk"
+# baseURL = "0.0.0.0"
+languageCode = "en-gb"
 title = "Mina Gyimah"
 # theme = "base16"
 # theme = "ga-hugo-theme"
