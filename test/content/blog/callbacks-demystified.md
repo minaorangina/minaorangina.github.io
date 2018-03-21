@@ -65,10 +65,9 @@ But in code snippet 2, it is an argument of `functionOne`.  When we run our code
 
 Ok cool, now you know what a callback is.  But, why should you care??
 
-#### Multitasking
+#### When things take a long time 
 
-Some stuff takes longer than others.  If part of your code makes a request to some server somewhere, that will take a while to complete. 
-
+Imagine you have some code, where some stuff takes longer to complete than others.  Something like this:
 
 {{<highlight javascript>}}
 
@@ -76,10 +75,10 @@ Some stuff takes longer than others.  If part of your code makes a request to so
 var data = fetchDataFromTheInternet();
 
 // this will be fairly quick
-var upperCaseData = makeDataUpperCase(data);
+var upperCaseData = makeUpperCase(data);
 
 // ⌛️ this will also take ages...
-putDataInDatabase(upperCaseData);
+putInDatabase(upperCaseData);
 
 // this will be quite quick
 var sum = addNumbers(2, 4);
@@ -88,3 +87,32 @@ var sum = addNumbers(2, 4);
 console.log(sum);
 
 {{</highlight>}}
+
+Let's say the stuff that takes a long time takes 3 seconds to complete.  (3 seconds is quite a long time in computer land - imagine clicking on something and nothing happening for 3 whole seconds!)  And let's say the stuff that's quite fast takes only 0.5 seconds.  How long will it take for this piece of code to be done?
+
+Let's assume each part of this code runs in order, i.e. `fetchDataFromTheInternet` happens first, then `makeUpperCase` etc.
+
+{{<highlight javascript>}}
+
+// 3 seconds
+var data = fetchDataFromTheInternet();
+
+// 0.5 seconds
+var upperCaseData = makeUpperCase(data);
+
+// 3 seconds
+putInDatabase(upperCaseData);
+
+// 0.5 seconds
+var sum = addNumbers(2, 4);
+
+// 0.5 seconds
+console.log(sum);
+
+// TOTAL TIME: 7.5 seconds 😩
+
+{{</highlight>}}
+
+7.5 seconds is a long time.  Well, we can't help the fact that fetching data takes a while.  Same goes for talking to databases.  These are just facts of life.  
+
+So is there _any_ way to speed this up? 
