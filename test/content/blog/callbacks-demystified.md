@@ -40,10 +40,13 @@ Well, no.
 
 A callback is (actually)...
 
-#### some function that is called by another function 
-##### and also
-#### it was passed _as an argument_ to that other function
-
+<div class="message-box">
+	<p>
+	  1. some function that is called by another function <br/>
+		+ <br/>
+		2. it was passed as an argument to that other function
+	</p>
+</div>
 
 So let's rewrite this to make `console.log` a real, legit callback.
 {{<highlight javascript>}}
@@ -113,6 +116,85 @@ console.log(sum);
 
 {{</highlight>}}
 
-7.5 seconds is a long time.  Well, we can't help the fact that fetching data takes a while.  Same goes for talking to databases.  These are just facts of life.  
+7.5 seconds is a long time in computer world.  But what to do?  The fact is, fetching data takes a while.  Same goes for talking to databases.  These are just facts of life.  
 
 So is there _any_ way to speed this up? 
+
+
+Well, we don't have to wait for one thing to finish before we start the next thing.
+
+### The Starbucks Way
+
+Coffee takes a while to make.  Imagine being behind someone in the queue.  They get their order taken.  Then the baristas start grinding the beans.  Once the beans are ground they get a cup.  They put the person's coffee in the cup, then add milk.  Then they give the person their coffee. 
+
+After that, they finally get round to taking your order.  And the person behind you has the same agonising wait that you just had.
+
+{{<highlight javascript>}}
+// PERSON AHEAD OF YOU
+// 60 seconds
+takeOrderFromCustomer();
+
+// 120 seconds
+var coffeeLiquid = grindCoffeeBeans(beans);
+
+// 40 seconds
+var blackCoffee = pourIntoCup(coffeeLiquid);
+
+// 35 seconds
+var finishedCoffee = addMilkFroth(blackCoffee);
+
+// 15 seconds
+giveToCustomer(finishedCoffee);
+
+// YOUR TURN
+// 60 seconds
+takeOrderFromCustomer();
+
+// 120 seconds
+var coffeeLiquid = grindCoffeeBeans(beans);
+
+// 40 seconds
+var finishedCoffee = pourIntoCup(coffeeLiquid);
+
+// 35 seconds
+var latte = addMilkFroth(finishedCoffee);
+
+// 15 seconds
+giveToCustomer(finishedCoffee);
+
+
+// TOTAL TIME: bloody ages 😩 😩
+
+{{</highlight>}}
+
+
+This would be a pretty silly way to do things.  The better approach would be for the baristas to take your order, then take someone else's order whilst your coffee is being made in the background.
+
+By the way, the computer programming-y way of saying "do one thing, then wait until it's finished before doing the next thing" is: "do stuff __synchronously__".
+
+{{<highlight javascript>}}
+
+function makeCoffeeInBackground (customerName, thenDoThis) {
+
+	// 120 seconds
+	var coffeeLiquid = grindCoffeeBeans(beans);
+
+	// 40 seconds
+	var blackCoffee = pourIntoCup(coffeeLiquid);
+
+	// 35 seconds
+	var flatWhite = addMilkFroth(blackCoffee);
+
+	thenDoThis(flatWhite, customerName)
+}
+
+var personInFront = takeOrderFromCustomer();
+makeCoffeeInBackground(personInFront, giveToCustomer);
+
+var you = takeOrderFromCustomer();
+makeCoffeeInBackground(you, giveToCustomer);
+
+
+// TOTAL TIME: bloody ages 😩 😩
+
+{{</highlight>}}

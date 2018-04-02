@@ -15,3 +15,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .box-masonary-description 
 p {
   color: black;
 }
+
+.content-column-content p {
+  color: black;
+  line-height: 25px;
+}
+
+pre {
+  margin-bottom: 2em;
+}
+
+.message-box {
+  -webkit-box-shadow: 4px 6px 30px 5px rgba(0,0,0,0.14);
+     -moz-box-shadow: 4px 6px 30px 5px rgba(0,0,0,0.14);
+          box-shadow: 4px 6px 30px 5px rgba(0,0,0,0.14);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.message-box p {
+  margin: auto;
+  font-weight: 700;
+}

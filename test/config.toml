@@ -7,6 +7,7 @@ title = "Mina Gyimah"
 # theme = "beautifulhugo"
 # theme = "tranquilpeak"
 theme = "creative-portfolio"
+pygmentsStyle="trac"
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
