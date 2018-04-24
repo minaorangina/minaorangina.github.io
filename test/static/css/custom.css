@@ -1,18 +1,25 @@
+.face {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
 body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: rgba(241, 250, 247, 0.747)
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .box-masonary-description {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
 }
 
 .italic {
-  font-family: 'IM Fell Great Primer', serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #808080;
   font-style: normal;
 }
 
-p {
+.box-masonry .box-masonry-text p  {
   color: black;
 }
 
@@ -22,6 +29,8 @@ p {
 }
 
 pre {
+  width: 90%;
+  margin: auto;
   margin-bottom: 2em;
 }
 
